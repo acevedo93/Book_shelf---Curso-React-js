@@ -1,0 +1,28 @@
+{
+  "name": "book_shelf",
+  "version": "1.0.0",
+  "description": "book_shelf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "server":"nodemon server/server.js",
+    "client": "npm run start --prefix client",
+    "dev" : "concurrently \"npm run server\" \"npm run client\""
+  },
+  "engines":{
+    "node": "9.10.1"
+  },
+  "author": "David acevedo",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.5.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.2",
+    "moment-js": "^1.1.15",
+    "mongoose": "^5.1.4"
+  }
+}
